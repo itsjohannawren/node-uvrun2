@@ -15,6 +15,11 @@ Contributions
 -------------
 *None yet*
 
+Requirements
+------------
+
+* NodeJS >+ 0.12.0
+
 Installation
 ------------
 

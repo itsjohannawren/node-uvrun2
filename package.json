@@ -1,26 +1,36 @@
 {
 	"name": "uvrun2",
 	"version": "0.1.1",
+	"description": "NodeJS bindings to the uvrun functions in libuv",
 	"author": {
 		"name": "Jeff Walter",
 		"email": "jeff@404ster.com"
 	},
-	"main": "build/Release/uvrun2.node",
+	"homepage": "https://github.com/jeffwalter/node-uvrun2#readme",
+	"readmeFilename": "README.md",
+	"tags": [
+		"libuv",
+		"uv",
+		"event",
+		"async",
+		"wait",
+		"sleep"
+	],
 	"repository": {
 		"type": "git",
 		"url": "git+ssh://git@github.com/jeffwalter/node-uvrun2.git"
+	},
+	"bugs": {
+		"url": "https://github.com/jeffwalter/node-uvrun2/issues"
+	},
+	"engines": {
+		"node": ">=0.12"
 	},
 	"scripts": {
 		"install": "node-gyp rebuild"
 	},
 	"gypfile": true,
-	"readme": "",
-	"readmeFilename": "README.md",
-	"description": "NodeJS bindings to the uvrun functions in libuv",
-	"bugs": {
-		"url": "https://github.com/jeffwalter/node-uvrun2/issues"
-	},
-	"homepage": "https://github.com/jeffwalter/node-uvrun2#readme",
+	"main": "build/Release/uvrun2.node",
 	"_id": "uvrun2@0.1.1",
 	"_from": "uvrun2@*"
 }
