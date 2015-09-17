@@ -1,6 +1,6 @@
 {
 	"name": "uvrun2",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"description": "NodeJS bindings to the uvrun functions in libuv",
 	"author": {
 		"name": "Jeff Walter",
@@ -24,13 +24,13 @@
 		"url": "https://github.com/jeffwalter/node-uvrun2/issues"
 	},
 	"engines": {
-		"node": ">=0.12"
+		"node": ">=0.10"
 	},
 	"scripts": {
 		"install": "node-gyp rebuild"
 	},
 	"gypfile": true,
 	"main": "build/Release/uvrun2.node",
-	"_id": "uvrun2@0.1.1",
+	"_id": "uvrun2@0.1.2",
 	"_from": "uvrun2@*"
 }

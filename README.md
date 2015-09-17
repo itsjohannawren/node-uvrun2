@@ -18,7 +18,7 @@ Contributions
 Requirements
 ------------
 
-* NodeJS >= 0.12.0
+* NodeJS >= 0.10.0
 
 Installation
 ------------
@@ -36,7 +36,16 @@ You can also clone this repo and build the module yourself:
 Usage
 -----
 
+Running the loop until no handles are left:
+
     var uvRun = require ('uvrun2').run;
+
+    setTimeout (function () { console.info ("Hello!"); }, 5000);
+    uvRun ();
+
+Running the loop once and handling a single event:
+
+    var uvRunOnce = require ('uvrun2').runOnce;
 
     setTimeout (function () { console.info ("Hello!"); }, 5000);
     while (1) {
@@ -46,7 +55,15 @@ Usage
 Methods
 -------
 
-### run
+### run ()
 
-Triggers a call to `uv_run()` for the main event loop. It will only process a
-single event if there are any, and return immediately if there are none.
+Process all events in the libuv loop until no handles are left. This call
+blocks.
+
+### runOnce (nonBlocking *= false*)
+
+Process a single event from the libuv loop. By default this call will block
+until it has processed an event, but you can pass `true` as the sole argument
+causing the call to either process a waiting event or return immediately.
+
+**NOTE**: Non-blocking is not available in all versions of libuv and thus not all version of NodeJS.
