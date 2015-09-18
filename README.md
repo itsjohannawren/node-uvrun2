@@ -1,6 +1,8 @@
 uvrun2
 ======
 
+[![Build Status](https://travis-ci.org/jeffwalter/node-uvrun2.svg?branch=master)](https://travis-ci.org/jeffwalter/node-uvrun2)
+
 Copyright
 ---------
 (C) 2015 Jeff Walter <jeff@404ster.com>, http://jwalter.sh/
