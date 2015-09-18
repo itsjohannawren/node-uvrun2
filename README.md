@@ -75,4 +75,10 @@ Process a single event from the libuv loop. By default this call will block
 until it has processed an event, but you can pass `true` as the sole argument
 causing the call to either process a waiting event or return immediately.
 
-**NOTE**: Non-blocking is not available in all versions of libuv and thus not all version of NodeJS.
+### loopSize (adjustment *= 0*)
+
+Adjust the number of active handles in the event loop and return the new count.
+If you have an interval timer that you do not want to keep your application
+alive, you can call `loopSize (-1)` to remove it from the count.
+
+**WARNING!** Using this function should be done with the utmost caution.

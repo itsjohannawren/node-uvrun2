@@ -1,6 +1,6 @@
 {
 	"name": "uvrun2",
-	"version": "0.1.4",
+	"version": "0.2.0",
 	"description": "NodeJS bindings to the uvrun functions in libuv",
 	"author": {
 		"name": "Jeff Walter",
@@ -37,6 +37,6 @@
 	"devDependencies": {
 		"mocha": "2.3.x"
 	},
-	"_id": "uvrun2@0.1.4",
+	"_id": "uvrun2@0.2.0",
 	"_from": "uvrun2@*"
 }
