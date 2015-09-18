@@ -26,7 +26,7 @@
 		"url": "https://github.com/jeffwalter/node-uvrun2/issues"
 	},
 	"engines": {
-		"node": ">=0.8"
+		"node": ">=0.11"
 	},
 	"scripts": {
 		"install": "node-gyp rebuild",

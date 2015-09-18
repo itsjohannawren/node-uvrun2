@@ -18,7 +18,7 @@ Contributions
 Requirements
 ------------
 
-* NodeJS >= 0.8.0
+* NodeJS >= 0.11.0
 
 Installation
 ------------
