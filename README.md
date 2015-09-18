@@ -18,7 +18,7 @@ Contributions
 Requirements
 ------------
 
-* NodeJS >= 0.10.0
+* NodeJS >= 0.8.0
 
 Installation
 ------------
@@ -32,6 +32,13 @@ You can also clone this repo and build the module yourself:
     git clone https://github.com/jeffwalter/node-uvrun2.git
     cd node-uvrun2
     node-gyp configure build
+
+Testing
+-------
+
+Dirt simple:
+
+    npm test
 
 Usage
 -----
