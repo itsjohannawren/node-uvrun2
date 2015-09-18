@@ -1,6 +1,6 @@
 {
 	"name": "uvrun2",
-	"version": "0.1.3",
+	"version": "0.1.4",
 	"description": "NodeJS bindings to the uvrun functions in libuv",
 	"author": {
 		"name": "Jeff Walter",
@@ -8,6 +8,8 @@
 	},
 	"homepage": "https://github.com/jeffwalter/node-uvrun2#readme",
 	"readmeFilename": "README.md",
+	"license": "MIT",
+	"licenseFilename": "LICENSE.md",
 	"keywords": [
 		"libuv",
 		"uv",
@@ -24,13 +26,17 @@
 		"url": "https://github.com/jeffwalter/node-uvrun2/issues"
 	},
 	"engines": {
-		"node": ">=0.10"
+		"node": ">=0.8"
 	},
 	"scripts": {
-		"install": "node-gyp rebuild"
+		"install": "node-gyp rebuild",
+		"test": "node_modules/mocha/bin/mocha test/test.js"
 	},
 	"gypfile": true,
 	"main": "build/Release/uvrun2.node",
-	"_id": "uvrun2@0.1.3",
+	"devDependencies": {
+		"mocha": "2.3.x"
+	},
+	"_id": "uvrun2@0.1.4",
 	"_from": "uvrun2@*"
 }
