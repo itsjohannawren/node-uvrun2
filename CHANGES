@@ -1,0 +1,4 @@
+0.3.0 (2015/10/14)
+------------------
+* Removed `run()` and `loopsize()` because they're just too dangerous
+* Add the `waitFor()` class to synchonize asynchronous code
