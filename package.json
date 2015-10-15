@@ -1,7 +1,7 @@
 {
 	"name": "uvrun2",
-	"version": "0.2.0",
-	"description": "NodeJS bindings to the uvrun functions in libuv",
+	"version": "0.3.0",
+	"description": "NodeJS binding to uv_run (..., UV_RUN_ONCE) in libuv and synchronizing of asynchronous functions",
 	"author": {
 		"name": "Jeff Walter",
 		"email": "jeff@404ster.com"
@@ -16,7 +16,8 @@
 		"event",
 		"async",
 		"wait",
-		"sleep"
+		"sleep",
+		"condvar"
 	],
 	"repository": {
 		"type": "git",
@@ -33,10 +34,10 @@
 		"test": "node_modules/mocha/bin/mocha test/test.js"
 	},
 	"gypfile": true,
-	"main": "build/Release/uvrun2.node",
+	"main": "lib/uvrun2.js",
 	"devDependencies": {
 		"mocha": "2.3.x"
 	},
-	"_id": "uvrun2@0.2.0",
+	"_id": "uvrun2@0.3.0",
 	"_from": "uvrun2@*"
 }
