@@ -18,7 +18,7 @@ namespace uvrun2 {
 		// Has some arguments, but is the first one boolean?
 		} else if (args [0]->IsBoolean ()) {
 			// Sure enough, is it true?
-			if (args [0]->BooleanValue ()) {
+			if (args[0]->BooleanValue(isolate)) {
 				// Yup! Non-blocking it is
 				mode = UV_RUN_NOWAIT;
 			} else {
@@ -38,7 +38,7 @@ namespace uvrun2 {
 		args.GetReturnValue ().Set (Number::New (isolate, result));
 	}
 
-	void init (Handle<Object> target) {
+	void init (Local<Object> target) {
 		NODE_SET_METHOD (target, "runOnce", RunOnce);
 	}
 
