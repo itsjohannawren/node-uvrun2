@@ -1,7 +1,6 @@
 #include <node.h>
 #include <v8.h>
 #include <uv.h>
-#include <stdio.h>
 
 namespace uvrun2 {
 	using namespace v8;
@@ -18,7 +17,7 @@ namespace uvrun2 {
 		// Has some arguments, but is the first one boolean?
 		} else if (args [0]->IsBoolean ()) {
 			// Sure enough, is it true?
-			if (args[0]->BooleanValue(isolate)) {
+			if (args [0]->BooleanValue (isolate)) {
 				// Yup! Non-blocking it is
 				mode = UV_RUN_NOWAIT;
 			} else {
@@ -28,7 +27,7 @@ namespace uvrun2 {
 		// Has some arguments, but the first one is not a boolean
 		} else {
 			// Throw our hands up
-			isolate->ThrowException (Exception::TypeError (String::NewFromUtf8 (isolate, "Argument must be a boolean value")));
+			isolate->ThrowException (Exception::TypeError (String::NewFromUtf8 (isolate, "Argument must be a boolean value", v8::NewStringType::kInternalized).ToLocalChecked ()));
 			return;
 		}
 

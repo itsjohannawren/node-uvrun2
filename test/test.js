@@ -5,7 +5,7 @@ describe ('uvrun2', function () {
 	describe ('#runOnce ()', function  () {
 		it ('should return after a single event is processed', function (done) {
 			// Setup a quicker failure timer
-			var failTimeout = setTimeout (done, 100, new Error ('Failed to return after event processed'));
+			var failTimeout = setTimeout (done, 300, new Error ('Failed to return after event processed'));
 			// Setup our test timer
 			setTimeout (function () {}, 30);
 			// Run the event loop
@@ -19,7 +19,7 @@ describe ('uvrun2', function () {
 	describe ('#runOnce (true)', function  () {
 		it ('should return after a single event is processed', function (done) {
 			// Setup a quicker failure timer
-			var failTimeout = setTimeout (done, 100, new Error ('Failed to return after event processed'));
+			var failTimeout = setTimeout (done, 300, new Error ('Failed to return after event processed'));
 			// Setup our test timer
 			setTimeout (function () {}, 0);
 			// Run the event loop
@@ -31,7 +31,7 @@ describe ('uvrun2', function () {
 		});
 		it ('should return immediately if there are no events to process', function (done) {
 			// Setup a quicker failure timer
-			var failTimeout = setTimeout (done, 100, new Error ('Failed to immediately return'));
+			var failTimeout = setTimeout (done, 30, new Error ('Failed to immediately return'));
 			// Run the event loop
 			uvrun2.runOnce (true);
 			// Stop the failure timer

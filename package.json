@@ -1,11 +1,17 @@
 {
 	"name": "uvrun2",
-	"version": "0.3.0",
+	"version": "0.4.0",
 	"description": "NodeJS binding to uv_run (..., UV_RUN_ONCE) in libuv and synchronizing of asynchronous functions",
 	"author": {
 		"name": "Jeff Walter",
 		"email": "jeff@404ster.com"
 	},
+	"contributors": [
+		{
+			"name": "a-parser",
+			"url": "https://github.com/a-parser"
+		}
+	],
 	"homepage": "https://github.com/jeffwalter/node-uvrun2#readme",
 	"readmeFilename": "README.md",
 	"license": "MIT",
@@ -27,7 +33,7 @@
 		"url": "https://github.com/jeffwalter/node-uvrun2/issues"
 	},
 	"engines": {
-		"node": ">=0.11"
+		"node": ">=12.0"
 	},
 	"scripts": {
 		"install": "node-gyp rebuild",
@@ -36,8 +42,10 @@
 	"gypfile": true,
 	"main": "lib/uvrun2.js",
 	"devDependencies": {
-		"mocha": "2.3.x"
+		"mocha": "*"
 	},
 	"_id": "uvrun2@0.3.0",
-	"_from": "uvrun2@*"
+	"dependencies": {
+		"node-gyp": "*"
+	}
 }
